@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+:root {
+  /* Your exact color palette */
+  --color-bg: #000000;
+  --color-text: #ffffff;
+  --color-accent: #ffff00;
+  --color-neutral-100: #ffffff;
+  --color-neutral-150: #070707;
+  --color-neutral-200: #636060;
+  --color-neutral-300: #f5f5dc;
+  --color-surface: #0c0b0b;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Custom utility classes */
+.accent-text {
+  color: var(--color-accent);
+}
+
+.neutralishish-text {
+  color: var(--color-neutral-150);
+}
+
+.neutralish-text {
+  color: var(--color-neutral-200);
+}
+
+.neutral-text {
+  color: var(--color-neutral-100);
+}
+.accent-border {
+  border-color: var(--color-accent);
+}
+
+.accent-bg {
+  background-color: var(--color-accent);
+  color: #000000;
+}
+
+.surface-bg {
+  background-color: var(--color-bg);
+  color: var(--color-neutral-100);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Cube CSS */
+
+.scene {
+  width: 200px;
+  height: 200px;
+  perspective: 800px;
+}
+
+.cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateY(45deg) rotateX(45deg) rotateZ(45deg);
+  animation: rotateScene 4s linear infinite;
+}
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: var(--color-accent);
+  border: 10px solid var(--color-surface);
+  color: #fff;
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.shadow {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  filter: blur(10px);
+  opacity: 0.5;
+  transform: rotateY(45deg) rotateX(90deg);
+  animation: rotateShadow 4s linear infinite;
+}
+@keyframes rotateScene {
+  from {
+    transform: rotateY(45deg) rotateX(45deg) rotateZ(45deg);
+  }
+  to {
+    transform: rotateY(405deg) rotateX(45deg) rotateZ(45deg);
+  }
+}
+
+@keyframes rotateShadow {
+  from {
+    transform: rotateY(45deg) rotateX(90deg);
+  }
+  to {
+    transform: rotateY(405deg) rotateX(90deg);
+  }
+}
