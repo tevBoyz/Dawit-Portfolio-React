@@ -57,7 +57,7 @@ const Projects = ({ setActiveSection }) => {
               key={index}
               variants={item}
               whileHover={{ y: -5 }}
-              className="bg-[var(--color-surface)] rounded-2xl overflow-hidden border-2 accent-border shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="cursor-pointer bg-[var(--color-surface)] rounded-2xl overflow-hidden border-2 accent-border shadow-md hover:shadow-lg transition-shadow duration-300"
             >
               <div className="h-48 overflow-hidden">
                 <img 

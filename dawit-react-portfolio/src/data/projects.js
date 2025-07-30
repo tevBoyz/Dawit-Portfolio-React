@@ -53,8 +53,8 @@ export const projects = [
     description: "Find the next word in the chain. If you miss, the next letter in that word will be revealed.",
     image: "/assets/images/word chain.jpg",
     technologies: ["HTML", "CSS", "JS","Game", "JSON", "API Integration", "Bootstrap"],
-    githubUrl: "https://github.com/tevBoyz/Wordle-clone",
-    liveUrl: "https://wordle-clone-ten-rho.vercel.app/"
+    githubUrl: "https://github.com/tevBoyz/Word-Chain",
+    liveUrl: "https://word-chain-olive.vercel.app/"
   },
   {
     title: "Numbers Game",

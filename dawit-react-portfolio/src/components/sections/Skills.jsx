@@ -55,20 +55,15 @@ const Skills = ({ setActiveSection }) => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: index * 0.05 }}
-                  className="bg-[var(--color-surface)] border border-[var(--color-border)] p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+                  className="bg-[var(--color-surface)] border border-[var(--color-accent)] p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
                 >
                   <div className="flex items-center space-x-4">
                     <div className="p-3 rounded-lg bg-opacity-10">
-                      <skill.icon className={`h-6 w-6 ${skill.color}`} />
+                      <skill.icon className={`h-8 w-8 accent-text`} />
                     </div>
                     <div className="w-full">
-                      <h3 className="font-semibold text-[var(--color-text)]">{skill.name}</h3>
-                      <div className="w-full bg-[var(--color-border)] rounded-full h-2 mt-2">
-                        <div 
-                          className={`${skill.color} h-2 rounded-full`}
-                          style={{ width: `${skill.level}%` }}
-                        ></div>
-                      </div>
+                      <h3 className="font-semibold accent-text">{skill.name}</h3>
+                      
                     </div>
                   </div>
                 </motion.div>
