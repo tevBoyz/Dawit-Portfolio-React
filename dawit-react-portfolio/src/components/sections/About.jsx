@@ -80,6 +80,7 @@ const About = ({ setActiveSection }) => {
             <div className="mt-8 flex gap-4">
               <a 
                 href="https://drive.google.com/uc?export=download&id=1fb-sVONBGSdBFnSV1GKJFoiGnnNczTKg" 
+                target='_blank'
                 download="Resume_Dawit_Tamiru.pdf"
                 className="px-6 py-2 accent-bg font-medium rounded-lg transition-all hover:opacity-50"
               >
