@@ -15,6 +15,12 @@ const Skills = ({ setActiveSection }) => {
     }
   }, [inView, setActiveSection])
 
+  const sectionTitles = {
+    frontEnd: 'Front-End',
+    backEnd: 'Back-End',
+    other: 'Other Technologies',
+  }
+
   return (
     <section 
       id="skills" 
@@ -26,37 +32,50 @@ const Skills = ({ setActiveSection }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold text-center accent-text mb-12"
+          className="text-3xl font-bold text-center accent-text mb-16"
         >
           My Skills
         </motion.h2>
-        
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {skills.map((skill, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
+
+        {Object.entries(skills).map(([sectionKey, skillList], sectionIndex) => (
+          <div key={sectionKey} className="mb-12">
+            <motion.h3
+              initial={{ opacity: 0, y: 10 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="bg-[var(--color-surface)] border border-[var(--color-border)] p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+              transition={{ duration: 0.5, delay: sectionIndex * 0.2 }}
+              className="text-xl font-semibold mb-6 accent-text"
             >
-              <div className="flex items-center space-x-4">
-                <div className="p-3 rounded-lg bg-opacity-10">
-                  <skill.icon className="h-6 w-6 text-[var(--color-accent)]" />
-                </div>
-                <div className="w-full">
-                  <h3 className="font-semibold text-[var(--color-text)]">{skill.name}</h3>
-                  <div className="w-full bg-[var(--color-border)] rounded-full h-2 mt-2">
-                    <div 
-                      className="h-2 rounded-full bg-[var(--color-accent)]"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
+              {sectionTitles[sectionKey]}
+            </motion.h3>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {skillList.map((skill, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={inView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                  className="bg-[var(--color-surface)] border border-[var(--color-border)] p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+                >
+                  <div className="flex items-center space-x-4">
+                    <div className="p-3 rounded-lg bg-opacity-10">
+                      <skill.icon className={`h-6 w-6 ${skill.color}`} />
+                    </div>
+                    <div className="w-full">
+                      <h3 className="font-semibold text-[var(--color-text)]">{skill.name}</h3>
+                      <div className="w-full bg-[var(--color-border)] rounded-full h-2 mt-2">
+                        <div 
+                          className={`${skill.color} h-2 rounded-full`}
+                          style={{ width: `${skill.level}%` }}
+                        ></div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   )

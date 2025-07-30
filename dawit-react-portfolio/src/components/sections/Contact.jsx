@@ -151,7 +151,6 @@ const Contact = ({ setActiveSection }) => {
             </div>
 
             <div className="pt-4">
-              <h4 className="font-medium text-[var(--color-text)] mb-2">Connect with me</h4>
               <div className="flex gap-4">
                 {/* Add your social media links here */}
                 <a href="#" className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors">
