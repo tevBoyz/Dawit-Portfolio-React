@@ -92,8 +92,8 @@ const Hero = ({ setActiveSection }) => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex-1 w-full max-w-md"
         >
-          <div className="w-full h-[800px] sm:h-[700px] rounded-2xl bg-[var(--color-bg)] flex items-center justify-center  accent-border">
-          <img src="assets/images/image-DT.png" alt="Dawit profile" className="rounded-2xl w-full h-full object-cover" />
+          <div className="w-full h-[800px] sm:h-[700px] rounded-2xl bg-[var(--color-bg)] flex items-center justify-center  accent-border md:my-20 sm:my-30">
+          <img src="assets/images/image-DT.png" loading='lazy' alt="Dawit profile" className="rounded-2xl w-full h-full object-cover" />
           </div>
         </motion.div>
       </div>

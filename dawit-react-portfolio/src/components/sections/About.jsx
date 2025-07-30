@@ -74,7 +74,7 @@ const About = ({ setActiveSection }) => {
             initial={{ opacity: 0, x: 40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex items-center justify-center sm:my-25"
+            className="flex items-center justify-center my-50 sm:my-30"
           >
             <div className="w-[200px] h-[200px] rounded-xl accent-borderflex items-center justify-center">
               {/* Your cube animation goes here */}
