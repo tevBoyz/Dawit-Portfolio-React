@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0 text-center md:text-left">
             <a 
               href="#home" 
-              className="text-xl font-bold"
+              className="text-xl font-bold accent-text"
             >
               Dawit <span className="text-[var(--color-accent)]">Tamiru</span>
             </a>

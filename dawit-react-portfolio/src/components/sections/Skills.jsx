@@ -57,12 +57,12 @@ const Skills = ({ setActiveSection }) => {
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                   className="bg-[var(--color-surface)] border border-[var(--color-accent)] p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
                 >
-                  <div className="flex items-center space-x-4">
+                  <div className="flex flex-col lg:flex-row sm:flex-row md:flex-row items-center justify-center space-x-4">
                     <div className="p-3 rounded-lg bg-opacity-10">
-                      <skill.icon className={`h-8 w-8 accent-text`} />
+                      <skill.icon className={`h-8 w-8 accent-text `} />
                     </div>
-                    <div className="w-full">
-                      <h3 className="font-semibold accent-text">{skill.name}</h3>
+                    <div className="w-full flex text-center">
+                      <h3 className="font-semibold accent-text text-center w-full lg:text-left md:text-left sm:text-left">{skill.name}</h3>
                       
                     </div>
                   </div>
