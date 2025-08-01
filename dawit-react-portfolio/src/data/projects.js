@@ -1,4 +1,3 @@
-// src/data/projects.js
 export const projects = [
   {
     title: "AI-Powered Flashcard Generator",
@@ -16,14 +15,14 @@ export const projects = [
     githubUrl: "https://github.com/tevBoyz/bingo-game",
     liveUrl: "https://bingo-game-five-sooty.vercel.app/"
   },
-  {
-    title: "Weather App",
-    description: " A simple weather app that fetches real-time weather data from an API and displays it in a user-friendly interface. It allows users to search for weather conditions by city and view current temperatures, wind speed, and more.",
-    image: "/assets/images/weather app.jpg",
-    technologies: ["AngularJs", "Tailwind", "API Integration", "Vercel"],
-    githubUrl: "https://github.com/tevBoyz/WeatherApp",
-    liveUrl: "https://weather-app-ob93.vercel.app/"
-  },
+  // {
+  //   title: "Weather App",
+  //   description: " A simple weather app that fetches real-time weather data from an API and displays it in a user-friendly interface. It allows users to search for weather conditions by city and view current temperatures, wind speed, and more.",
+  //   image: "/assets/images/weather app.jpg",
+  //   technologies: ["AngularJs", "Tailwind", "API Integration", "Vercel"],
+  //   githubUrl: "https://github.com/tevBoyz/WeatherApp",
+  //   liveUrl: "https://weather-app-ob93.vercel.app/"
+  // },
   {
     title: "PMF-Calculator For Medical Services",
     description: "An app, Pediatric Maintenance Fluid Calculator, calculated the fluid requirements for pediatric patients(children), which is crucial for managing hydration, especially in clinical or hospital settings.",
