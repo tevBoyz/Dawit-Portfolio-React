@@ -20,7 +20,7 @@ const item = {
 
 const Projects = ({ setActiveSection }) => {
   const [ref, inView] = useInView({
-    threshold: 0.1,
+    threshold: 0.01,
     triggerOnce: false,
   })
 
@@ -48,7 +48,7 @@ const Projects = ({ setActiveSection }) => {
 
         <motion.div
           variants={container}
-          initial="hidden"
+          initial={false}
           animate={inView ? "show" : "hidden"}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
