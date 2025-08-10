@@ -103,5 +103,4 @@ export const projects = [
     githubUrl: "https://www.youtube.com/@battles4u",
     liveUrl: "https://www.youtube.com/@battles4u"
   },
-   // Add more projects as needed
 ]
