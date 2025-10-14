@@ -86,21 +86,21 @@ const Projects = ({ setActiveSection }) => {
 </div>
                 <div className="flex flex-wrap gap-3 mt-2">
   <a 
-    href={project.githubUrl} 
+    href={project.Tiktok} 
     target="_blank"
     rel="noopener noreferrer"
     className="px-4 py-2 text-sm font-semibold rounded-lg bg-[var(--color-surface)] border-2 border-[var(--color-accent)] text-[var(--color-accent)] opacity-100 hover:opacity-50 active:scale-95 transition-all duration-300"
   >
-    GitHub
+    Tiktok
   </a>
-  {project.liveUrl && (
+  {(
     <a 
-      href={project.liveUrl} 
+      href={project.Instagram} 
       target="_blank"
       rel="noopener noreferrer"
       className="px-4 py-2 text-sm font-semibold rounded-lg bg-[var(--color-accent)] neutralishish-text opacity-100 hover:opacity-50 transition-all duration-300"
     >
-      Live Demo
+      Instagram
     </a>
   )}
 </div>

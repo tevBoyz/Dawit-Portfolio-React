@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -24,16 +24,16 @@ const Footer = () => {
           </div>
           
           <div className="flex space-x-6">
-            <a 
+            {/* <a 
               href="https://github.com/tevBoyz" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors"
             >
               <FaGithub className="h-6 w-6 accent-text" />
-            </a>
+            </a> */}
             <a 
-              href="https://linkedin.com/in/dawit-tefera-tamiru-6b9496136" 
+              href="https://www.linkedin.com/in/yeaymrokal-kebede-7b3624239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors"
@@ -41,12 +41,12 @@ const Footer = () => {
               <FaLinkedin className="h-6 w-6 accent-text" />
             </a>
             <a 
-              href="https://www.youtube.com/@battles4u" 
+              href="https://www.instagram.com/brain__word?igsh=MWRoeXhyN3F1bTV3Ng%3D%3D&utm_source=qr" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors"
             >
-              <FaYoutube className="h-6 w-6 accent-text" />
+              <FaInstagram className="h-6 w-6 accent-text" />
             </a>
           </div>
         </div>
