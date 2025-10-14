@@ -19,12 +19,9 @@ const About = ({ setActiveSection }) => {
   }, [inView, setActiveSection])
 
   const paragraphs = [
-    `Hello, I'm Dawit, a Full Stack developer based in Ethiopia with a strong focus on creating responsive, accessible, and visually polished user interfaces. I specialize in modern technologies like React, Tailwind CSS, and Vite, with a solid grasp of JavaScript and TypeScript best practices.`,
-    `I bring a keen eye for detail and a user-centered approach to every project I work on. Whether it's a marketing site, a dashboard, or a complex single-page app, I aim to deliver clean code, performance-optimized features, and intuitive user experiences.`,
-    `One of my strongest areas is CSS. I love pushing the limits of what’s possible with modern CSS and animations. I regularly share my insights and tips through my YouTube channel, where I break down creative UI effects and animation techniques.`,
-    `I'm currently expanding my expertise into back-end development, working with technologies like Node.js, NestJS, and SQL databases to build complete full stack applications. This journey reflects my drive to become a well-rounded developer capable of contributing across the entire development stack.`,
-    `I'm also experienced in building and deploying real-world apps, including a flashcard generator powered by AI. I'm passionate about continuous learning, and I enjoy solving real problems with code, from idea to deployment.`,
-    `I'm actively seeking opportunities to contribute to high-impact projects and grow with forward-thinking teams. Let’s build something meaningful together.`
+    `I am a highly skilled, solution oriented and creative professional with over five years of experience in end user service, technical troubleshooting and network development. `,
+    `I have demonstrated my skills in providing creative and effective solutions in various companies. I am also a talented graphics designer, video editor and social media manager with proven experience in managing various social media accounts.`,
+    `I am a team player, a fast learner and posses an outstanding work ethic.`
   ]
 
   return (
@@ -68,20 +65,12 @@ const About = ({ setActiveSection }) => {
 </div>
 
 
-           <div className='mt-4 flex justify-end'>
-             <button
-              onClick={() => setShowMore(prev => !prev)}
-              className="mt-4 text-[var(--color-accent)] hover:underline font-medium hover:cursor-pointer"
-            >
-              {showMore ? 'Read less ▲' : 'Read more ▼'}
-            </button>
-           </div>
+           
 
             <div className="mt-8 flex gap-4">
-              <a 
-                href="https://drive.google.com/uc?export=download&id=1Cfl4alrmi-M7ORv5DL3jRMpeqRk4YH2M" 
+              <a download
+                href='/Yeaymrokal - Resume.pdf' 
                 target='_blank'
-                download="Resume_Dawit_Tamiru.pdf"
                 className="px-6 py-2 accent-bg font-medium rounded-lg transition-all hover:opacity-50"
               >
                 Download Resume

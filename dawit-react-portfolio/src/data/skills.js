@@ -16,6 +16,17 @@ import { FaCoffee } from 'react-icons/fa';
 
 
 export const skills = {
+ SocalMedia: [
+    { name: 'Video editing', icon: FaReact, level: 100, color: 'text-blue-500' },
+    { name: 'Graphics Design ', icon: SiTailwindcss, level: 100, color: 'text-cyan-400' },
+    { name: 'Google suite', icon: FaJs, level: 95, color: 'text-yellow-500' },
+    { name: 'Adobe Packages', icon: SiTypescript, level: 100, color: 'text-blue-600' },
+    { name: 'Presentation Platform', icon: FaHtml5, level: 100, color: 'text-orange-500' },
+    { name: 'Communication', icon: FaCss3Alt, level: 95, color: 'text-blue-400' },
+    { name: 'Team Work', icon: SiBootstrap, level: 95, color: 'text-purple-500' },
+  ],
+
+
   frontEnd: [
     { name: 'React', icon: FaReact, level: 90, color: 'text-blue-500' },
     { name: 'Tailwind CSS', icon: SiTailwindcss, level: 85, color: 'text-cyan-400' },

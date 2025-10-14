@@ -116,10 +116,10 @@ const Contact = ({ setActiveSection }) => {
                 <div>
                   <h4 className="font-medium text-[var(--color-text)]">Email</h4>
                   <a 
-                    href="mailto:dawit.ttamiru@gmail.com" 
+                    href="mailto:amikalkebede@gmail.com" 
                     className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors"
                   >
-                    dawit.ttamiru@gmail.com
+                    amikalkebede@gmail.com
                   </a>
                 </div>
               </div>
@@ -134,7 +134,7 @@ const Contact = ({ setActiveSection }) => {
                     href="tel:+251911676343" 
                     className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors"
                   >
-                    +251 911 676343
+                    +251923150109
                   </a>
                 </div>
               </div>

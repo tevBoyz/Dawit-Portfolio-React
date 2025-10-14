@@ -40,7 +40,7 @@ const Hero = ({ setActiveSection }) => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-6xl font-extrabold accent-text tracking-tight mb-3"
           >
-            Dawit T. Tamiru
+            Yeaymrokal Kebede Mola
           </motion.h2>
 
           <motion.h3
@@ -49,7 +49,7 @@ const Hero = ({ setActiveSection }) => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl sm:text-3xl font-medium neutralish-text mb-6"
           >
-            Full Stack Developer
+            Social Media Manager / Marketing Analyst
           </motion.h3>
           <br/>
           <br/>
@@ -93,7 +93,7 @@ const Hero = ({ setActiveSection }) => {
           className="flex-1 w-full max-w-md"
         >
           <div className="w-full h-[800px] sm:h-[700px] rounded-2xl bg-[var(--color-bg)] flex items-center justify-center  accent-border md:my-20 sm:my-30">
-          <img src="assets/images/image-DT.png" loading='lazy' alt="Dawit profile" className="rounded-2xl w-full h-full object-cover" />
+          <img src="/assets/images/aemro.png" loading='lazy' alt="Yeaymro profile" className="rounded-2xl w-full h-full object-cover" />
           </div>
         </motion.div>
       </div>

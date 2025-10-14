@@ -16,7 +16,7 @@ const Footer = () => {
               href="#home" 
               className="text-xl font-bold accent-text"
             >
-              Dawit <span className="text-[var(--color-accent)]">Tamiru</span>
+              Yeaymrokal <span className="text-[var(--color-accent)]">Kebede</span>
             </a>
             <p className="mt-2 text-[var(--color-muted)]">
               © {new Date().getFullYear()} All rights reserved.

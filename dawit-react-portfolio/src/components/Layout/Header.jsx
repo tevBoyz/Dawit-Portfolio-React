@@ -100,7 +100,7 @@ const Header = () => {
             href="#home" 
             className="text-xl font-bold accent-text text-white"
           >
-            Dawit<span className="text-primary-500"> Tamiru</span>
+            Yeaymrokal<span className="text-primary-500"> Kebede</span>
           </a>
           
           {/* Desktop Navigation */}
