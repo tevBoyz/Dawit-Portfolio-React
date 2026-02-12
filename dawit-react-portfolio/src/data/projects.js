@@ -1,5 +1,27 @@
 export const projects = [
   {
+    title: "Star Skin Car",
+    description: "Recording, editing and posting videos on Tiktok, Instagram and YouTube, Tracking and managing accounts according to engagement and follower interest and Strategizing and leading a team of professionals.",
+    image: "/assets/images/star.jpg",
+    technologies: ["Adobe packages", "Capcut", "Canva", "NestJs"],
+    Tiktok: "https://www.tiktok.com/@starskincareet?_r=1&_t=ZS-93rmswspQNI",
+  },
+  {
+    title: "Ahaty Tour and Travel",
+    description: "Recording, editing and posting videos on Tiktok, Instagram and YouTube, Tracking and managing accounts according to engagement and follower interest and Strategizing and leading a team of professionals.",
+    image: "/assets/images/ahaty.jpg",
+    technologies: ["Adobe packages", "Capcut", "Canva", "NestJs"],
+    Tiktok: "https://www.tiktok.com/@ahaty.tours?_r=1&_t=ZS-93rn1NxKi1s",
+  },
+  
+  {
+    title: "TZNA General Hospital",
+    description: "Recording, editing and posting videos on Tiktok, Instagram and YouTube, Tracking and managing accounts according to engagement and follower interest and Strategizing and leading a team of professionals.",
+    image: "/assets/images/tzna.jpg",
+    technologies: ["Adobe packages", "Capcut", "Canva", "NestJs"],
+    Tiktok: "https://www.tiktok.com/@tzna.general.hospital?_r=1&_t=ZS-93rmSwMBBPI",
+  },
+  {
     title: "Tuari home care P.L.C",
     description: "Recording, editing and posting videos on Tiktok, Instagram and YouTube, Tracking and managing accounts according to engagement and follower interest and Strategizing and leading a team of professionals.",
     image: "/assets/images/tuari.jpg",
