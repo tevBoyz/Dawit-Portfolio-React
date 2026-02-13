@@ -5,6 +5,7 @@ export const projects = [
     image: "/assets/images/star.jpg",
     technologies: ["Adobe packages", "Capcut", "Canva", "NestJs"],
     Tiktok: "https://www.tiktok.com/@starskincareet?_r=1&_t=ZS-93rmswspQNI",
+    Instagram: "none"
   },
   {
     title: "Ahaty Tour and Travel",
@@ -12,6 +13,7 @@ export const projects = [
     image: "/assets/images/ahaty.jpg",
     technologies: ["Adobe packages", "Capcut", "Canva", "NestJs"],
     Tiktok: "https://www.tiktok.com/@ahaty.tours?_r=1&_t=ZS-93rn1NxKi1s",
+    Instagram: "none"
   },
   
   {
@@ -20,6 +22,7 @@ export const projects = [
     image: "/assets/images/tzna.jpg",
     technologies: ["Adobe packages", "Capcut", "Canva", "NestJs"],
     Tiktok: "https://www.tiktok.com/@tzna.general.hospital?_r=1&_t=ZS-93rmSwMBBPI",
+    Instagram: "none"
   },
   {
     title: "Tuari home care P.L.C",

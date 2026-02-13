@@ -1,29 +1,27 @@
 import { 
-  FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt, FaNetworkWired, FaTools 
+  FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt, FaNetworkWired, FaTools,
+  FaCode, FaDatabase, FaDesktop, FaCoffee, FaVideo, FaPaintBrush, FaGoogle,
+  FaFilePowerpoint, FaComments, FaUsers
 } from 'react-icons/fa';
 
 import { 
   SiTypescript, SiTailwindcss, SiNextdotjs, SiMongodb, SiNestjs, SiMysql,
-   SiElectron, SiDotnet, SiGitlab, SiGooglechrome, SiXml
+   SiElectron, SiDotnet, SiGitlab, SiGooglechrome, SiXml, SiAdobe
 } from 'react-icons/si';
 
-import { FaCode } from 'react-icons/fa';
 import { SiBootstrap } from 'react-icons/si';
-import { FaDatabase } from 'react-icons/fa';
-import { FaDesktop } from 'react-icons/fa'; 
-import { FaCoffee } from 'react-icons/fa';
 
 
 
 export const skills = {
  SocalMedia: [
-    { name: 'Video editing', icon: FaReact, level: 100, color: 'text-blue-500' },
-    { name: 'Graphics Design ', icon: SiTailwindcss, level: 100, color: 'text-cyan-400' },
-    { name: 'Google suite', icon: FaJs, level: 95, color: 'text-yellow-500' },
-    { name: 'Adobe Packages', icon: SiTypescript, level: 100, color: 'text-blue-600' },
-    { name: 'Presentation Platform', icon: FaHtml5, level: 100, color: 'text-orange-500' },
-    { name: 'Communication', icon: FaCss3Alt, level: 95, color: 'text-blue-400' },
-    { name: 'Team Work', icon: SiBootstrap, level: 95, color: 'text-purple-500' },
+    { name: 'Video editing', icon: FaVideo, level: 100, color: 'text-blue-500' },
+    { name: 'Graphics Design ', icon: FaPaintBrush, level: 100, color: 'text-cyan-400' },
+    { name: 'Google suite', icon: FaGoogle, level: 95, color: 'text-yellow-500' },
+    { name: 'Adobe Packages', icon: SiAdobe, level: 100, color: 'text-blue-600' },
+    { name: 'Presentation Platform', icon: FaFilePowerpoint, level: 100, color: 'text-orange-500' },
+    { name: 'Communication', icon: FaComments, level: 95, color: 'text-blue-400' },
+    { name: 'Team Work', icon: FaUsers, level: 95, color: 'text-purple-500' },
   ],
 
 
