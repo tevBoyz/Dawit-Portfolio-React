@@ -1,6 +1,30 @@
 export const experiences = [
   {
     position: 'SOCIAL MEDIA MANAGER',
+    company: 'Star Skin Car',
+    startDate: '10/2025',
+    endDate: 'Present',
+    description: 'Recording, editing and posting videos on Tiktok, Instagram and YouTube, Tracking and managing accounts according to engagement and follower interest and Strategizing and leading a team of professionals.',
+    technologies: ['Adobe packages', 'Cupcut', 'Canva', 'NestJs', 'Gemini Integration', 'Tailwind CSS', 'Vite'],
+  },
+  {
+    position: 'SOCIAL MEDIA MANAGER',
+    company: 'Ahaty Tour and Travel',
+    startDate: '11/2025',
+    endDate: 'Present',
+    description: 'Recording, editing and posting videos on Tiktok, Instagram and YouTube, Tracking and managing accounts according to engagement and follower interest and Strategizing and leading a team of professionals.',
+    technologies: ['Adobe packages', 'Cupcut', 'Canva', 'NestJs', 'Gemini Integration', 'Tailwind CSS', 'Vite'],
+  },
+  {
+    position: 'SOCIAL MEDIA MANAGER',
+    company: 'TZNA General Hospital',
+    startDate: '12/2025',
+    endDate: 'Present',
+    description: 'Recording, editing and posting videos on Tiktok, Instagram and YouTube, Tracking and managing accounts according to engagement and follower interest and Strategizing and leading a team of professionals.',
+    technologies: ['Adobe packages', 'Cupcut', 'Canva', 'NestJs', 'Gemini Integration', 'Tailwind CSS', 'Vite'],
+  },
+  {
+    position: 'SOCIAL MEDIA MANAGER',
     company: 'Tuari Home Caring P.L.C',
     startDate: '03/2025',
     endDate: 'Present',
