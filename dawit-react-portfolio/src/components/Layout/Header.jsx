@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
+  { name: 'Projects', href: '#projects' },
   { name: 'Skills', href: '#skills' },
   { name: 'Contact', href: '#contact' },
 ]
@@ -100,7 +100,7 @@ const Header = () => {
             href="#home" 
             className="text-xl font-bold accent-text text-white"
           >
-            Dawit<span className="text-primary-500"> Tamiru</span>
+            Dawit<span className="text-[var(--color-accent)]"> Tamiru</span>
           </a>
           
           {/* Desktop Navigation */}
@@ -118,15 +118,15 @@ const Header = () => {
                   }}
                   className={`relative px-1 py-2 text-sm font-medium transition-colors ${
                     isActive
-                      ? 'accent-text dark:text-primary-400'
-                      : 'text-gray-700 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400'
+                      ? 'accent-text'
+                      : 'text-[var(--color-neutral-300)] hover:text-[var(--color-accent)]'
                   }`}
                 >
                   {link.name}
                   {isActive && (
                     <motion.span
                       layoutId="activeSection"
-                      className="absolute left-0 top-full h-0.5 w-full bg-primary-500"
+                      className="absolute left-0 top-full h-0.5 w-full bg-[var(--color-accent)]"
                       transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
                     />
                   )}
@@ -137,7 +137,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 focus:outline-none"
+            className="md:hidden p-2 rounded-md text-[var(--color-neutral-300)] hover:text-[var(--color-accent)] focus:outline-none"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -183,8 +183,8 @@ const Header = () => {
                     }}
                     className={`block px-3 py-2 rounded-md text-base font-medium ${
                       isActive
-                        ? 'bg-primary-100 text-primary-700 '
-                        : 'text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700'
+                        ? 'bg-[var(--color-accent)] text-[var(--color-neutral-150)]'
+                        : 'text-[var(--color-neutral-300)] hover:bg-[var(--color-bg)]'
                     }`}
                   >
                     {link.name}

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useState, useEffect } from 'react';
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
 // Define your EmailJS public keys here or use environment variables
@@ -93,10 +94,13 @@ const Contact = ({ setActiveSection }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold text-center accent-text mb-12"
+          className="section-title"
         >
           Contact Me
         </motion.h2>
+        <p className="section-subtitle">
+          Looking for a reliable engineer and tech lead partner? Let’s discuss your team or product goals.
+        </p>
         
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Information Column */}
@@ -107,6 +111,9 @@ const Contact = ({ setActiveSection }) => {
             className="space-y-8"
           >
             <h3 className="text-xl font-bold mb-6">Contact Information</h3>
+            <p className="text-[var(--color-muted)] -mt-4">
+              Open to full-time and contract roles (remote, hybrid, or on-site). Typical response time is within 24 hours.
+            </p>
             
             <div className="space-y-6">
               <div className="flex items-start gap-4">
@@ -152,18 +159,32 @@ const Contact = ({ setActiveSection }) => {
 
             <div className="pt-4">
               <div className="flex gap-4">
-                {/* Add your social media links here */}
-                <a href="#" className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors">
-                  <span className="sr-only">LinkedIn</span>
-                  {/* LinkedIn icon would go here */}
+                <a
+                  href="https://www.linkedin.com/in/dawit-tefera-tamiru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn profile"
+                  className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors"
+                >
+                  <FaLinkedin className="h-6 w-6 accent-text" />
                 </a>
-                <a href="#" className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors">
-                  <span className="sr-only">GitHub</span>
-                  {/* GitHub icon would go here */}
+                <a
+                  href="https://github.com/tevBoyz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub profile"
+                  className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors"
+                >
+                  <FaGithub className="h-6 w-6 accent-text" />
                 </a>
-                <a href="#" className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors">
-                  <span className="sr-only">Twitter</span>
-                  {/* Twitter icon would go here */}
+                <a
+                  href="https://www.youtube.com/@battles4u"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube channel"
+                  className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors"
+                >
+                  <FaYoutube className="h-6 w-6 accent-text" />
                 </a>
               </div>
             </div>
@@ -228,7 +249,7 @@ const Contact = ({ setActiveSection }) => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`px-6 py-3 rounded-lg font-medium bg-[var(--color-accent)] neutralishish-text hover:opacity-90 transition-all ${
+                  className={`px-6 py-3 rounded-lg font-medium bg-[var(--color-accent)] neutralishish-text hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg)] transition-all ${
                     isSubmitting ? 'opacity-80 cursor-not-allowed' : 'hover:shadow-md active:scale-[0.98]'
                   }`}
                 >

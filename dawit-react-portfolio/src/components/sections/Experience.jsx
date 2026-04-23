@@ -3,6 +3,14 @@ import { useInView } from 'react-intersection-observer'
 import { experiences } from '../../data/experience'
 import { useEffect } from 'react'
 
+const toBullets = (description) => {
+  return description
+    .replaceAll('•', '')
+    .split('.')
+    .map((part) => part.trim())
+    .filter(Boolean)
+}
+
 const Experience = ({ setActiveSection }) => {
   const [ref, inView] = useInView({
     threshold: 0.1,
@@ -26,10 +34,13 @@ const Experience = ({ setActiveSection }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold text-center accent-text mb-12"
+          className="section-title"
         >
           Job Experience
         </motion.h2>
+        <p className="section-subtitle">
+          Roles focused on shipping product outcomes, cross-functional collaboration, and scalable engineering delivery.
+        </p>
         
         <div className="relative">
           {/* Timeline line */}
@@ -62,7 +73,11 @@ const Experience = ({ setActiveSection }) => {
                       {exp.startDate} - {exp.endDate || 'Present'}
                     </span>
                   </div>
-                  <p className="mt-2 text-[var(--color-neutral-400)]">{exp.description}</p>
+                  <ul className="mt-3 space-y-2 text-[var(--color-muted)] list-disc list-inside">
+                    {toBullets(exp.description).map((point, pointIndex) => (
+                      <li key={pointIndex}>{point}.</li>
+                    ))}
+                  </ul>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {exp.technologies.map((tech, i) => (
                       <span 

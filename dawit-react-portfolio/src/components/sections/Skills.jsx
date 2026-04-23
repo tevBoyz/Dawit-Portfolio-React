@@ -32,10 +32,13 @@ const Skills = ({ setActiveSection }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold text-center accent-text mb-16"
+          className="section-title"
         >
-          My Skills
+          Core Skills
         </motion.h2>
+        <p className="section-subtitle">
+          Technologies I use to deliver reliable frontend, backend, and product-ready solutions.
+        </p>
 
         {Object.entries(skills).map(([sectionKey, skillList], sectionIndex) => (
           <div key={sectionKey} className="mb-12">

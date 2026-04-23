@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dawit-tefera-tamiru.vercel.app/sitemap.xml

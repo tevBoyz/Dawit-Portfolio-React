@@ -10,6 +10,8 @@
   --color-neutral-200: #636060;
   --color-neutral-300: #f5f5dc;
   --color-surface: #0c0b0b;
+  --color-muted: #b5b5b5;
+  --color-border: #2a2a2a;
 }
 
 body {
@@ -45,6 +47,23 @@ body {
 .surface-bg {
   background-color: var(--color-bg);
   color: var(--color-neutral-100);
+}
+
+.section-title {
+  font-size: clamp(1.875rem, 2vw + 1rem, 2.5rem);
+  font-weight: 800;
+  text-align: center;
+  color: var(--color-accent);
+  margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+  max-width: 42rem;
+  margin: 0 auto 2.5rem auto;
+  text-align: center;
+  color: var(--color-muted);
+  line-height: 1.6;
+  font-size: clamp(0.95rem, 0.5vw + 0.85rem, 1.05rem);
 }
 
 html {
@@ -126,5 +145,16 @@ html {
   }
   to {
     transform: rotateY(405deg) rotateX(90deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

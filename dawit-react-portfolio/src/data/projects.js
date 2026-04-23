@@ -1,15 +1,15 @@
 export const projects = [
   {
     title: "AI-Powered Flashcard Generator",
-    description: "A dynamic web and mobile application for creating interactive flashcards from document uploads. This React flashcard app transforms uploaded documents into interactive study cards with flip animations and swipe navigation. Featuring local storage for session history.",
+    description: "A React-based web and mobile study tool that turns uploaded notes into AI-generated flashcards. Built with smooth card interactions, swipe navigation, and local session history for repeat study workflows.",
     image: "/assets/images/flashcard.jpg",
-    technologies: ["ReactJs", "Tailwind", "HTML/CSS", "Rest API", "Gemini AI integration", "CapactorJs"],
+    technologies: ["ReactJs", "Tailwind", "HTML/CSS", "Rest API", "Gemini AI integration", "CapacitorJS"],
     githubUrl: "https://github.com/tevBoyz/flashcard-react",
     liveUrl: "https://flashcard-react-iota.vercel.app/"
   },
   {
     title: "Real Time Multiplayer Bingo Game",
-    description: " A full-stack, real-time multiplayer Bingo game where players can host or join a game using a unique room code. Built with React, Redux Toolkit, and Socket.IO, the game synchronizes state seamlessly across all connected players.",
+    description: "A full-stack real-time multiplayer Bingo platform where players host or join rooms with unique codes. Built with React, Redux Toolkit, and Socket.IO for synchronized gameplay across connected users.",
     image: "/assets/images/bingo.jpg",
     technologies: ["ReactJs", "Tailwind", "Redux", "SocketIO", "NodeJs", "Hooks/States","Vercel/Render Integration"],
     githubUrl: "https://github.com/tevBoyz/bingo-game",
@@ -25,7 +25,7 @@ export const projects = [
   // },
   {
     title: "PMF-Calculator For Medical Services",
-    description: "An app, Pediatric Maintenance Fluid Calculator, calculated the fluid requirements for pediatric patients(children), which is crucial for managing hydration, especially in clinical or hospital settings.",
+    description: "A pediatric maintenance fluid calculator built to support hydration planning in clinical workflows. The app helps healthcare teams calculate child fluid requirements quickly and accurately.",
     image: "/assets/images/pmf calculator.jpg",
     technologies: ["ReactJs", "Tailwind", "Redux", "SocketIO", "NodeJs", "Hooks/States","Vercel/Render Integration"],
     githubUrl: "https://github.com/tevBoyz/PMF-Calculator",
@@ -33,7 +33,7 @@ export const projects = [
   },
   {
     title: "Clock",
-    description: "A simple clock app to practice DOM manipulation and JavaScript fundamentals. It displays the current time and updates every second.",
+    description: "A JavaScript clock application focused on DOM updates, timing logic, and lightweight responsive UI behavior.",
     image: "/assets/images/clock.jpg",
     technologies: ["HTML", "CSS", "JS"],
     githubUrl: "https://github.com/tevBoyz/clock",
@@ -41,7 +41,7 @@ export const projects = [
   },
   {
     title: "Wordle Clone Game",
-    description: "Wordle clone game, is a copy of the famous wordle game. I used a free API to use words to play with. The game uses Bootstrap style and make the game mobile friedly.",
+    description: "A Wordle-style game clone using external word APIs and responsive Bootstrap styling for mobile-friendly gameplay.",
     image: "/assets/images/wordle-clone.jpg",
     technologies: ["HTML", "CSS", "JS","Game", "JSON", "API Integration", "Bootstrap"],
     githubUrl: "https://github.com/tevBoyz/Wordle-clone",
@@ -49,7 +49,7 @@ export const projects = [
   },
   {
     title: "Word Chain Game",
-    description: "Find the next word in the chain. If you miss, the next letter in that word will be revealed.",
+    description: "A progressive word puzzle where each correct answer extends the chain and hint logic reveals letters after missed attempts.",
     image: "/assets/images/word chain.jpg",
     technologies: ["HTML", "CSS", "JS","Game", "JSON", "API Integration", "Bootstrap"],
     githubUrl: "https://github.com/tevBoyz/Word-Chain",
@@ -57,7 +57,7 @@ export const projects = [
   },
   {
     title: "Numbers Game",
-    description: "A logic puzzle game where players deduce a hidden 4-digit number through strategic guessing.",
+    description: "A number-logic puzzle game where users deduce a hidden four-digit sequence through strategic guesses and feedback loops.",
     image: "/assets/images/numbers.png",
     technologies: ["HTML", "CSS", "JS","Game", "JSON", "Puzzle", "Logic"],
     githubUrl: "https://github.com/tevBoyz/Numbers-Newest",
@@ -65,7 +65,7 @@ export const projects = [
   },
   {
     title: "Hangman Game",
-    description: "Classic hangman with API-generated words, my first project integrating with an external API.",
+    description: "A classic Hangman implementation using API-provided word sets and basic game-state management in JavaScript.",
     image: "/assets/images/hangmann.png",
     technologies: ["HTML", "CSS", "JS","Game", "JSON", "API Integration"],
     githubUrl: "https://github.com/tevBoyz/Hangmann",
@@ -73,7 +73,7 @@ export const projects = [
   },
   {
     title: "Cryptogram Game",
-    description: "Decipher a hidden message by cracking a letter-substitution cipher! Each letter in the encoded text is replaced by another (e.g., A → D, B → X). Your task is to decode the original words using logic, pattern recognition, and language clues.",
+    description: "A substitution-cipher challenge game where players decode hidden messages using pattern recognition and language clues.",
     image: "/assets/images/cryptogram.jpg",
     technologies: ["HTML", "CSS", "JS","Game", "JSON", "API Integration", "Encryption"],
     githubUrl: "https://github.com/tevBoyz/cryptoG",
@@ -81,7 +81,7 @@ export const projects = [
   },
   {
     title: "Match the Bottles Game",
-    description: "Match the bottles on the top with the bottles behind the curtain. The game tracks the the number of matched bottles so that you can deduce the correct positions of all the bottles.",
+    description: "A memory and deduction game where players match visible and hidden bottle positions using progressive feedback.",
     image: "/assets/images/match the bottles.jpg",
     technologies: ["HTML", "CSS", "JS","Game", "JSON", "API Integration", "Encryption"],
     githubUrl: "https://github.com/tevBoyz/Match-the-bottles",
@@ -89,7 +89,7 @@ export const projects = [
   },
   {
     title: "Find the different Box Game",
-    description: "Identify the different box from the boxes on the screen. the hue of the box gets more and more difficult as you go up a level.",
+    description: "A visual perception game where users identify subtle hue differences that become harder at each level.",
     image: "/assets/images/find the different box.png",
     technologies: ["HTML", "CSS", "JS","Game", "JSON", "Hue Colors"],
     githubUrl: "https://github.com/tevBoyz/find-the-difference",
@@ -97,7 +97,7 @@ export const projects = [
   },
   {
     title: "Battles4U YT Channel",
-    description: "The Battles4U YouTube channel is a hub for frontend developers looking to sharpen their HTML and CSS skills. It features daily walkthroughs of CSSBattle.dev challenges, offering clean and efficient solutions with clear explanations. Beyond static designs, the channel also highlights creative CSS animation techniques using keyframes and transitions, showcasing unique visual ideas and dynamic effects.",
+    description: "An educational frontend channel focused on CSSBattle solutions, HTML/CSS practice, and animation techniques for UI developers.",
     image: "/assets/images/battles.jpg",
     technologies: ["HTML", "CSS", "JS"],
     githubUrl: "https://www.youtube.com/@battles4u",

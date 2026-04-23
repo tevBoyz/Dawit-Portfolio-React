@@ -19,7 +19,7 @@ const About = ({ setActiveSection }) => {
   }, [inView, setActiveSection])
 
   const paragraphs = [
-    `Hello, I'm Dawit, a Full Stack developer based in Ethiopia with a strong focus on creating responsive, accessible, and visually polished user interfaces. I specialize in modern technologies like React, Tailwind CSS, and Vite, with a solid grasp of JavaScript and TypeScript best practices.`,
+    `Hello, I'm Dawit, a Full Stack Developer and Business Analyst based in Ethiopia. I am actively looking for software engineering and tech lead opportunities where I can build responsive, accessible, and production-ready web applications.`,
     `I bring a keen eye for detail and a user-centered approach to every project I work on. Whether it's a marketing site, a dashboard, or a complex single-page app, I aim to deliver clean code, performance-optimized features, and intuitive user experiences.`,
     `One of my strongest areas is CSS. I love pushing the limits of what’s possible with modern CSS and animations. I regularly share my insights and tips through my YouTube channel, where I break down creative UI effects and animation techniques.`,
     `I'm currently expanding my expertise into back-end development, working with technologies like Node.js, NestJS, and SQL databases to build complete full stack applications. This journey reflects my drive to become a well-rounded developer capable of contributing across the entire development stack.`,
@@ -79,9 +79,9 @@ const About = ({ setActiveSection }) => {
 
             <div className="mt-8 flex gap-4">
               <a 
-                href="https://drive.google.com/uc?export=download&id=1Cfl4alrmi-M7ORv5DL3jRMpeqRk4YH2M" 
-                target='_blank'
-                download="Resume_Dawit_Tamiru.pdf"
+                href="/DAWIT_TEFERATAMIRU_CV%20(3).pdf"
+                target="_blank"
+                download="DAWIT_TEFERATAMIRU_CV (3).pdf"
                 className="px-6 py-2 accent-bg font-medium rounded-lg transition-all hover:opacity-50"
               >
                 Download Resume

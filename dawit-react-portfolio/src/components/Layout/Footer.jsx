@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -28,14 +28,16 @@ const Footer = () => {
               href="https://github.com/tevBoyz" 
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub profile"
               className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors"
             >
               <FaGithub className="h-6 w-6 accent-text" />
             </a>
             <a 
-              href="https://linkedin.com/in/dawit-tefera-tamiru-6b9496136" 
+              href="https://www.linkedin.com/in/dawit-tefera-tamiru"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
               className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors"
             >
               <FaLinkedin className="h-6 w-6 accent-text" />
@@ -44,6 +46,7 @@ const Footer = () => {
               href="https://www.youtube.com/@battles4u" 
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="YouTube channel"
               className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors"
             >
               <FaYoutube className="h-6 w-6 accent-text" />
